@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+    <script type="text/javascript">
+        // objects can bundle in one entity
+        // literal way 
+        var car={
+            car_brand :"Sprizo",
+            car_model:"moadel1",
+            car_prize:"700000",
+
+            file : function(){
+
+                document.write("<h1>about cars</h2>")
+
+            }
+           
+        }
+        car.file();
+        document.write("<h2>"+car.car_brand+"</h2>");
+
+        // function constructor
+        function cars(car_brand,car_model,car_price){
+            this.car_brand =car_brand;
+            this.car_model =car_model;
+            this.car_price = car_price;
+            this.file = function()
+            {
+                document.write("<h1>about cars</h2>");
+            }
+            
+        }
+        var c1 = new cars("tesla","model 1",3000);
+        var c2 = new cars("tesla","model 2",3000);
+        
+            document.write("<h1>"+c2.car_model+"</h2>");
+        
+            c1.file();
+
+            //boolean,numbers ,string cae ne objects with deined with a new keyword
+            var cars={
+                car_brand :"Sprizo",
+            car_model:"moadel1",
+            car_prize:"700000",
+folder : function(){
+    document.write("<h1>about cars</h2>");
+}
+
+            }
+            
+           
+            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
