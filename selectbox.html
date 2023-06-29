@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdownbox</title>
+    <script type="text/javascript">
+
+function  btn(){
+    var select = document.getElementById("spot");
+    alert(select.options[select.selectedIndex].value);
+
+}
+
+
+
+    </script>
+</head>
+<body>
+    <select  id="spot">
+<option>Coimbatore</option>
+<option>Chennai</option>
+<option>Canada</option>
+    </select>
+    <br>
+    <br>
+    <button id="spotknack" onclick="btn()"> Click me</button>
+</body>
+</html>
