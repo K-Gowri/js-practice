@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio buttons</title>
+
+
+    <script type="text/javascript">
+        function btn(){
+            var rd1=document.getElementById("rd1");
+            var rd2=document.getElementById("rd2");
+            if (rd1.checked==true){
+                alert("checked"+rd1.value);
+                
+            }
+
+            else if(rd2.checked==true){
+                alert("checked"+rd2.value);
+
+            }
+            else{
+                alert("not checked");
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+
+    <input type="radio" name="rd1" id="rd1" value="mentor" />Mentor :
+    <br>
+    <br>
+    <input type="radio" name="rd1" id="rd2" value="student" />student :
+    <br>
+    <br>
+    <button id="spot"    onclick="btn()">Submit</button>
+
+
+</body>
+</html>
