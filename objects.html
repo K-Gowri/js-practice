@@ -41,17 +41,22 @@
             c1.file();
 
             //boolean,numbers ,string cae ne objects with deined with a new keyword
-            var cars={
+            var car={
                 car_brand :"Sprizo",
             car_model:"moadel1",
             car_prize:"700000",
-folder : function(){
-    document.write("<h1>about cars</h2>");
+            folder : function(){
+            document.write("<h1>about cars</h2>");
 }
 
             }
             
-           
+           car.fueltype = "electric";
+           delete car.car_prize;
+           document.write("<h1>"+car.fueltype+"</h2>");
+            document.write("<h1>"+car.car_price+"</h2>");
+        
+
             
     </script>
 </head>

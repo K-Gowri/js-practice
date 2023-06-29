@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    
+    <script type="text/javascript">
+
+        /*DOM manipulation and getElementById method*/
+function submit(){
+    document.getElementById("spot").innerHTML="Registration completed";
+   // alert("once written can't be changed");
+}
+  /*function fn1(){
+    var str= document.getElementById("text1").value;
+    alert("value inside the box is :"+ str);
+  }*/
+  function fn1(){
+     var str1=document.getElementById("first").value;
+     var str2=document.getElementById("pass").value;
+    if(str1==str2){
+        alert("Registration completed");
+
+    }
+    else
+    {
+        alert("name and password are incorrect");
+        
+    }
+   
+
+  }
+  fn1();
+  
+  
+  </script>
+</head>
+<body>
+
+    <button onclick="submit()"> Submit</button>
+    <h2 id="spot"> welcome to spotknack!</h2>
+
+
+<form>
+    <label for="first">First Name : </label>
+    <input id="first"  type="text" name="first" placeholder="Enter your name">
+    <br>
+    <button onclick="fn1()" id="btn1">click me</button> 
+    <br>
+    <label for="pass">Password : </label>
+    <input id="pass" type="password" name="pass" placeholder="Enter your name">
+   
+    </form>
+
+
+
+    
+</body>
+</html>
