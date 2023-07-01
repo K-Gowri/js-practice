@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile number validation</title>
+    <script type="text/javascript">
+        function validate(){
+            var text  = document.getElementById("www").value;
+            var rgex = /^[7-9]\d[0-9]$/;
+
+            if(rgex.test(text))
+            {
+                document.getElementById("bush").innerHTML="Valid";
+                document.getElementById("bush").style.visibility="visible";
+                document.getElementById("bush").style.color="green";
+
+            }
+            else{
+                
+                document.getElementById("bush").innerHTML="InValid";
+                document.getElementById("bush").style.visibility="visible";
+                document.getElementById("bush").style.color="red";
+            }
+        }
+        
+        
+        
+
+        
+        
+
+    </script>
+
+
+</head>
+<body>
+    
+    
+    
+    <form >
+    <input placeholder="mobilenumber" id="www" type="text" /><br>
+    
+    <label id="bush" style="color:red; visibility: hidden" >
+        Invalid
+    </label><br>
+    
+    <br>
+    <br>
+    <button type="button" onclick="validate()">Submit</button>
+</form>
+    
+    
+</body>
+</html>
