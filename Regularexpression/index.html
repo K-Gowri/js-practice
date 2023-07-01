@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script type="text/javascript">
+        function validate(){
+            var username  = document.getElementById("unmae").value;
+            var rgex = /[^a-z]E001/;
+
+            if(rgex.test(username)){
+                alert("valid username");
+            }
+            else{
+                
+                alert("Invalid username");
+                document.getElementById("bush").style.visibility="visible";
+            }
+        }
+        
+        
+        
+
+        
+        
+
+    </script>
+
+
+</head>
+<body>
+    
+    
+    
+    <form action="message.html">
+    <input type="text" placeholder="username" id="unmae" /><br>
+    
+    <label id="bush" style="color:red; visibility: hidden" >
+        Invalid
+    </label><br>
+    
+    <br>
+    <br>
+    <button type="submit" onclick="validate()" >Submit</button>
+</form>
+    
+    
+</body>
+</html>
